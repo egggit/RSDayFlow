@@ -86,6 +86,19 @@
  */
 @property (nonatomic, getter = isPagingEnabled) BOOL pagingEnabled;
 
+//////////////////////////////////////////////////
+// egg modified
+
+/**
+ *  Background color of DaysOfWeekView
+ */
+@property (nonatomic, retain) UIColor *backgroundColorDaysOfWeekView;
+
+/**
+ *  Background color of CollectionView
+ */
+@property (nonatomic, retain) UIColor *backgroundColorCollectionView;
+
 ///----------------------------
 /// @name Scrolling to the Date
 ///----------------------------

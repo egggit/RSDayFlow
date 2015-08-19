@@ -116,6 +116,18 @@ static NSString * const RSDFDatePickerViewDayCellIdentifier = @"RSDFDatePickerVi
     
     [super layoutSubviews];
     
+    //////////////////////////////////////////////////
+    // egg modified
+    if (self.backgroundColorDaysOfWeekView != nil)
+    {
+        self.daysOfWeekView.backgroundColor = self.backgroundColorDaysOfWeekView;
+    }
+    
+    if (self.backgroundColorCollectionView != nil)
+    {
+        self.collectionView.backgroundColor = self.backgroundColorCollectionView;
+    }
+    
     self.daysOfWeekView.frame = [self daysOfWeekViewFrame];
     if (!self.daysOfWeekView.superview) {
         [self addSubview:self.daysOfWeekView];
